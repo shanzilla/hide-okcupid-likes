@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "js": [ "content.js" ],
+      "js": [ "scripts.js" ],
       "css": [ "style.css" ],
       "matches": [ "https://okcupid.com/*", "https://www.okcupid.com/*" ]
     }
