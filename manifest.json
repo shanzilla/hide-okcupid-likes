@@ -7,6 +7,6 @@
 
   "content_scripts": [{
     "css": ["style.css"],
-    "matches": ["https://okcupid.com/*"]
+    "matches": ["https://okcupid.com/*", "https://www.okcupid.com/*"]
   }]
 }
