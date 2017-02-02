@@ -6,8 +6,15 @@
   "description": "This extension allows users to customize the display of OkCupid likes.",
   "options_page": "options.html",
 
-  "content_scripts": [{
-    "css": ["style.css"],
-    "matches": ["https://okcupid.com/*", "https://www.okcupid.com/*"]
-  }]
+  "permissions": [
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "js": [ "content.js" ],
+      "css": [ "style.css" ],
+      "matches": [ "https://okcupid.com/*", "https://www.okcupid.com/*" ]
+    }
+  ]
 }
