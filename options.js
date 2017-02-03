@@ -1,19 +1,18 @@
-// Saves options to chrome.storage
 function save_options() {
   var state = document.querySelector('input[name=state]:checked').value;
   chrome.storage.sync.set({
     state: state
   }, function() {
-    // Update status to let user know options were saved.
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
+    status.style.display = 'block';
     setTimeout(function() {
       status.textContent = '';
-    }, 2000);
+      status.style.display = 'none';
+    }, 3000);
   });
 }
 
-// Restores radio button selection using the preferences stored in chrome.storage
 function restore_options() {
   chrome.storage.sync.get({
     state: 'hide'

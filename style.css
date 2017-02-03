@@ -1,11 +1,9 @@
-nav#navigation li#nav_ratings.hide_count #nav_ratings_badge {
-    display: none !important;
-}
-
 nav#navigation li#nav_ratings.disable_color #nav_ratings_badge {
     background: #4c7bd9 !important;
 }
 
-nav#navigation li#nav_ratings.hide_btn {
+nav#navigation li#nav_ratings.hide_btn,
+nav#navigation li#nav_ratings.hide_btn #nav_ratings_badge,
+nav#navigation li#nav_ratings.hide_count #nav_ratings_badge {
     display: none !important;
 }

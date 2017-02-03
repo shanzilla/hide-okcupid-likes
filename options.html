@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head><title>Hide OkCupid Likes : Options</title></head>
-<body>
+<head>
+  <title>Hide OkCupid Likes : Options</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
-<form id="stateSelection">
-  <input type="radio" name="state" id="hide" value="hide" checked> Hide Like Count<br/>
-    <input type="radio" name="state" id="hideBtn" value="hideBtn"> Hide Like Button<br />
-  <input type="radio" name="state" id="color" value="color"> Disable Like Count Color<br/>
-  <input type="radio" name="state" id="default" value="default"> Restore Default Behavior
-</form>
-<br />
-<div id="status"></div>
-<br/>
+  <style type="text/css">
+    body,
+    button#save {
+      background: #104da1;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: .05em;
+      margin: 0;
+      padding: 30px 0;
+    }
+    a {
+      color: #104da1;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff597e;
+    }
+    div#container {
+      background: #4c7bd9;
+      border-radius: 5px;
+      margin: 10% auto 20px;
+      min-width: 100px;
+      width: 40%;
+    }
+    div#content {
+      background: white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 30px 40px;
+      text-align: left;
+    }
+    div#status {
+      background: #ffe2f0;
+      border: 1px solid #ff597e;
+      color: #ff597e;
+      display: none;
+      margin-bottom: 25px;
+      padding: 5px 10px;
+    }
+    div#footer {
+      border-top: 1px solid #e5e5e5;
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 20px;
+      padding-top: 20px;
+      text-align: center;
+    }
+    button#save {
+      border: 2px solid white;
+      border-radius: 25px;
+      color: white;
+      padding: 10px 40px;
+    }
+    button#save:hover {
+      background: #4c7bd9;
+      cursor: pointer;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="container">
+  <h1>Hide OkCupid Likes</h1>
+  <div id="content">
+    <div id="status"></div>
+    <form id="stateSelection">
+      <input type="radio" name="state" id="hide" value="hide" checked> Hide Like Count<br/>
+      <input type="radio" name="state" id="hideBtn" value="hideBtn"> Hide Like Navigation Icon and Count<br />
+      <input type="radio" name="state" id="color" value="color"> Disable Like Count Accent Color<br/>
+      <input type="radio" name="state" id="default" value="default"> Restore Default Behavior
+    </form>
+    <div id="footer">
+      Find a bug? <a href="https://github.com/shanzilla/hide-okcupid-likes/issues" target="_blank">Report it</a>.
+    </div>
+  </div>
+</div>
+
 <button id="save">Save</button>
 
 <script src="options.js"></script>
