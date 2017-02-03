@@ -33,6 +33,9 @@ function addClasses(data) {
             case 'hideBtn':
                 ratingsElem.className += ' hide_btn';
                 break;
+            case 'default':
+                ratingsElem.className += ' do_nothing';
+                break;
             default:
                 // Do nothing
         }
