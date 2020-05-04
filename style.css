@@ -1,8 +1,7 @@
-nav#navigation li#nav_ratings:not(.do_nothing) #nav_ratings_badge {
-    background: #4c7bd9 !important;
+nav#navigation #nav_ratings:not(.do_nothing) .navbar-likes-count {
+    background: #444 !important;
 }
 
-nav#navigation li#nav_ratings:not(.do_nothing):not(.disable_color) #nav_ratings_badge,
-nav#navigation li#nav_ratings.hide_btn {
+nav#navigation [id^="nav_ratings"]:not(.do_nothing):not(.disable_color) .navbar-likes-count {
     display: none !important;
 }

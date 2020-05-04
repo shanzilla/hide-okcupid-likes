@@ -30,8 +30,17 @@ function addClasses(data) {
             case 'color':
                 ratingsElem.className += ' disable_color';
                 break;
-            case 'hideBtn':
-                ratingsElem.className += ' hide_btn';
+            case 'changeLabel':
+                ratingsElem.className += ' change_label';
+                ratingsElem.getElementsByClassName("navbar-link-text")[0].innerText = "Intros";
+                ratingsElem.href="/intros";
+
+                ratingsElem.onclick = function() {
+                  window.onunload = function() {
+                    alert("You're leaving this page.");
+                  };
+                  window.location.href="https://www.okcupid.com/intros";
+                };
                 break;
             case 'default':
                 ratingsElem.className += ' do_nothing';
