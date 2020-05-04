@@ -34,11 +34,7 @@ function addClasses(data) {
                 ratingsElem.className += ' change_label';
                 ratingsElem.getElementsByClassName("navbar-link-text")[0].innerText = "Intros";
                 ratingsElem.href="/intros";
-
                 ratingsElem.onclick = function() {
-                  window.onunload = function() {
-                    alert("You're leaving this page.");
-                  };
                   window.location.href="https://www.okcupid.com/intros";
                 };
                 break;
