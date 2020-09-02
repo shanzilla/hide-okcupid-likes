@@ -2,7 +2,7 @@
   "name": "Hide OkCupid Likes",
   "version": "2.0.2",
   "description": "This extension allows users to customize the display of OkCupid likes.",
-  //"icons": { "128": "icon128.png" },
+  "icons": { "128": "icon128-v2.png" },
   "options_page": "options.html",
   "background": {
     "scripts": [ "background.js" ],
